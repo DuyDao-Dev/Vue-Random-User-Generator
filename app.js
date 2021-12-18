@@ -7,8 +7,17 @@ const app = Vue.createApp({
             gender: 'male',
             picture: 'https://randomuser.me/api/portraits/men/10.jpg',
         }
+    },
+    methods: {
+        getUser() {
+            this.firstName = 'Samantha'
+            this.lastName = 'Doe'
+            this.email = 'samantha@email.com'
+            this.gender = 'female'
+            this.picture = 'https://randomuser.me/api/portraits/women/10.jpg'
+        }
     }
-});
+})
 
 app.mount('#app');
 
